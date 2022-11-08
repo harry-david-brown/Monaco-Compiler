@@ -1,0 +1,12 @@
+@ SOFIA Example (Volume of a sphere) @
+MAIN& {
+	DATA {
+		FLOAT PI%, r%, Vol%;
+	}
+	CODE {
+		PI% = 3.14;
+		READ&(r%);
+		Vol% = 4.0 / 3.0 * PI% * (r% * r% * r%);
+		WRITE&(Vol%);
+	}
+}

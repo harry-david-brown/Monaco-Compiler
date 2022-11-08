@@ -1,0 +1,19 @@
+@ SOFIA Example
+  Testing numbers (ex: factorial) @
+MAIN& {
+    DATA {
+        INT i#, n#, f#;
+    }
+    CODE {
+        f#=1;
+        i#=1;
+        WRITE&("Write a number:");
+        READ&(n#);
+        WHILE (i#<n#) DO {
+            f# = f# * i#;
+            i# = i# + 1;
+        };
+        WRITE&("Factorial:");
+        WRITE&(f#);
+    }
+}
